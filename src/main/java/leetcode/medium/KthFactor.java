@@ -3,6 +3,7 @@ package leetcode.medium;
 public class KthFactor {
     public static void main(String[] args) {
         System.out.println(kthFactor(12, 3));
+        System.out.println(kthFactor(7, 2));
 
 
     }
