@@ -13,12 +13,10 @@ public class SumRootToLeafNumbers {
     static int s = 0;
     public static int sumNumbers(TreeNode root) {
 
+        s = 0;
         sumTree(root, 0);
 
-        int sum = s;
-        s = 0;
-
-        return sum;
+        return s;
     }
 
     public static void sumTree(TreeNode t, int currentSum){
