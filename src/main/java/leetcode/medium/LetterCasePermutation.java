@@ -11,6 +11,7 @@ public class LetterCasePermutation {
         for (int i = 0; i < permutations.size(); i++){
             System.out.println(permutations.get(i));
         }
+
         //output: a1b2, a1B2, A1b2, A1B2
     }
 
