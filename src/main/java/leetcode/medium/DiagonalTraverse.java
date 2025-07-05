@@ -34,12 +34,13 @@ public class DiagonalTraverse {
             } else {
                 dx = -1;
                 dy = 1;
-                c = i <  mat[0].length - 1 ? i : mat[0].length - 1;
+                c = i < mat[0].length - 1 ? i : mat[0].length - 1;
                 r = i - c;
             }
 
             while (-1 < r && r < mat.length && - 1 < c && c < mat[0].length){
                 diagonalOrder[k++] = mat[r][c];
+//                System.out.print(r * mat[0].length + (c+1) + ", ");
                 r += dy;
                 c += dx;
             }
