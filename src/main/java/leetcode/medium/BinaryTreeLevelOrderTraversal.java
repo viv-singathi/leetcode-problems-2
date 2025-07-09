@@ -22,11 +22,6 @@ public class BinaryTreeLevelOrderTraversal {
 
         //output: [[3], [9, 20], [15, 7]]
 
-
-
-
-
-
     }
 
     public static List<List<Integer>> levelOrder(TreeNode root) {
