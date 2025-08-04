@@ -23,11 +23,11 @@ public class NumbersAtMostNGivenDigitSet {
         }
 
         int max_digits = (int) (Math.log10(n)) + 1;
-        int unique_digits_length_i = nums.length;
+        int numbers_length_i = nums.length;
 
         for (int i = 1; i < max_digits; i++){
-            total += unique_digits_length_i;
-            unique_digits_length_i *= nums.length;
+            total += numbers_length_i;
+            numbers_length_i *= nums.length;
         }
 
         total += countEqualLength(n, max_digits, (int) Math.pow(10, max_digits-1), nums);
