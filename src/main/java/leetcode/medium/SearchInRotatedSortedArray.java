@@ -16,14 +16,14 @@ public class SearchInRotatedSortedArray {
 
         int offset = findRotationOffset(nums);
         int i = offset + 1;
-        int j = i + nums.length;
+        int j = offset + nums.length;
 
         if (nums[i % nums.length] == target){
-            return i;
+            return i % nums.length;
         }
 
         if (nums[j % nums.length] == target){
-            return j;
+            return j % nums.length;
         }
 
         while (i < j - 1){
