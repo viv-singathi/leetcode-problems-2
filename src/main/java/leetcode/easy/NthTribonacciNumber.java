@@ -9,7 +9,6 @@ public class NthTribonacciNumber {
         //output:
         // 4
         // 1389537
-
     }
 
     public static int tribonacci(int n) {
