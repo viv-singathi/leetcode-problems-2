@@ -8,8 +8,6 @@ public class SmallestValueOfReArrangedNumber {
         //output:
         // 103
         //-7650
-
-
     }
 
     public static long smallestNumber(long num) {
