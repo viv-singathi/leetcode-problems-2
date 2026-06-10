@@ -8,7 +8,7 @@ public class CountGoodNumbers {
     //A digit string is a string consisting of digits 0 through 9 that may contain leading zeros.
 
     public static void main(String[] args) {
-        System.out.println(countGoodNumbers(50)); //output:
+        System.out.println(countGoodNumbers(50)); //output: 564908303
     }
 
     public static int countGoodNumbers(long n) {
