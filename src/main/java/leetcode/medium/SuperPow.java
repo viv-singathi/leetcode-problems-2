@@ -10,7 +10,22 @@ public class SuperPow {
     }
 
     public static int superPow(int a, int[] b) {
-        return superPow(a % 1337, b, b.length-1);
+        a %= 1337;
+
+        if (gcd(a, 1337) == 1){
+            int exp = 0;
+            for (int i = 0; i < b.length; i++){
+                exp = (exp * 10 + b[i]) % 1140;
+            }
+            return fpow(a, exp);
+        }
+        return superPow(a, b, b.length-1);
+    }
+
+    public static int gcd(int x, int y){
+        if(x == 1){return 1;}
+        if (x % y == 0){return y;}
+        return gcd(y, x % y);
     }
 
     public static int superPow(int a, int[] b, int e) {
