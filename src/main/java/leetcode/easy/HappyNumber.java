@@ -11,7 +11,7 @@ public class HappyNumber {
     //Return true if n is a happy number, and false if not
 
     public static void main(String[] args) {
-        System.out.println(isHappy(19));
+        System.out.println(isHappy(19)); //output: true
     }
 
     public static boolean isHappy(int n) {
