@@ -15,10 +15,8 @@ public class ConsecutiveNumbersSum {
         int c = 0;
 
         for (int i = 1; i < sqrtn; i++){
-            if (n % i == 0){
-                if ((n / i - (i-1)) % 2 == 0){
-                    c++;
-                }
+            if (n % i == 0 && (n / i - (i-1)) % 2 == 0){
+                c++;
             }
         }
 
