@@ -29,7 +29,7 @@ public class GoodIndicesInDigitString {
                 n /= 10;
             }
 
-            if (n == 0 && i != 0){
+            if (n == 0){
                 res.add(i);
             }
         }
